@@ -182,8 +182,14 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
   <div style="background: #FFFFFF; color: #0A2540; border-radius: 36px; overflow: hidden; display: flex; flex-wrap: wrap">
     <figure style="margin: 0; flex: 1 1 380px; min-height: 420px; position: relative; overflow: hidden; background: #CFE9FB">
       <div class="kb" aria-hidden="true" style="position: absolute; inset: 0; background-color: #CFE9FB; background-image: radial-gradient(rgba(0,61,165,.18) 1.5px, transparent 1.5px); background-size: 22px 22px"></div>
-      <div style="position: absolute; inset: 0; padding: 28px; display: flex; flex-direction: column; justify-content: space-between">
-        <span style="align-self: flex-start; background: #FFFFFF; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; color: #0E5A8F">[CHAPLAIN PHOTO]</span>
+      <div aria-hidden="true" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding-bottom: 60px">
+        <div style="width: 150px; height: 150px; border-radius: 50%; background: #FFFFFF; border: 3px dashed #003DA5; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
+          <svg viewBox="0 0 100 100" style="width: 120px; height: 120px" fill="#9DBCE6"><circle cx="50" cy="36" r="20"></circle><path d="M10 104c0-24 18-40 40-40s40 16 40 40z"></path></svg>
+        </div>
+        <span style="background: #003DA5; color: #FFFFFF; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 600">Add her photo here</span>
+      </div>
+      <img class="kb" src="images/chaplain.jpg" alt="Our chaplain" onerror="this.remove()" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top">
+      <div style="position: absolute; inset: 0; padding: 28px; display: flex; flex-direction: column; justify-content: flex-end">
         <div style="background: #FFFFFF; border-radius: 18px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; align-self: flex-start">
           <span style="font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -.02em">[CHAPLAIN NAME]</span>
           <span style="color: #3B5670; font-weight: 500">Chaplain, Indian Christian Fellowship</span>
