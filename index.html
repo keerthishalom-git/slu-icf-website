@@ -38,7 +38,8 @@ a{color:#C23A10}a:hover{color:#8F2A0A}
 .tile:hover{transform:translateY(-6px)}
 .row{transition:background .25s ease,padding .25s ease}
 .row:hover{background:rgba(255,255,255,.08)}
-.row:hover .arrow{background:#E0481A;color:#FFFFFF;transform:rotate(-45deg)}
+.row:hover .arrow{background:#DFFF4F;color:#0A2540;border-color:#DFFF4F !important;transform:rotate(-45deg)}
+::selection{background:#DFFF4F;color:#0A2540}
 .arrow{transition:transform .3s ease,background .3s ease,color .3s ease}
 input,select,textarea{font:inherit}
 input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset:1px}
@@ -75,8 +76,8 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <header id="top" style="position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding: 72px 24px 56px; display: flex; flex-direction: column; gap: 56px">
   <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
     <div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-      <p class="f1" style="margin: 0; display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; background: #E6F3FD; color: #0E5A8F; padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 14px">
-        <span class="live" aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #E0481A"></span>
+      <p class="f1" style="margin: 0; display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; background: #0A2540; color: #FFFFFF; padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 14px">
+        <span class="live" aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #DFFF4F; box-shadow: 0 0 10px #DFFF4F"></span>
         Indian Christian Fellowship · Saint Louis University
       </p>
       <h1 class="f2" style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(52px, 8.4vw, 128px); line-height: .94; letter-spacing: -.045em">A home away<br>from home, <span style="color: #8DCBF4">rooted</span><br>in <span style="color: #FF9466">Christ.</span></h1>
@@ -116,7 +117,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
     <div class="tile p3" style="position: relative; overflow: hidden; border-radius: 28px; background: #0A2540; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
       <svg class="spin" role="img" aria-label="All are welcome" viewBox="0 0 200 200" style="width: 168px; height: 168px">
         <defs><path id="ring" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"></path></defs>
-        <text fill="#FFFFFF" style="font-family: Inter, sans-serif; font-size: 15.5px; font-weight: 600; letter-spacing: 4px"><textPath href="#ring">ALL ARE WELCOME · ALL ARE WELCOME · </textPath></text>
+        <text fill="#DFFF4F" style="font-family: Inter, sans-serif; font-size: 15.5px; font-weight: 600; letter-spacing: 4px"><textPath href="#ring">ALL ARE WELCOME · ALL ARE WELCOME · </textPath></text>
       </svg>
       <svg aria-hidden="true" viewBox="0 0 24 24" style="position: absolute; width: 40px; height: 40px" fill="none" stroke-linecap="round"><path d="M12 3v18M5.5 9h13" stroke="#8DCBF4" stroke-width="2.6"></path></svg>
     </div>
@@ -137,25 +138,25 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <!-- MARQUEE -->
 <div aria-label="What we do" style="background: #0A2540; color: #FFFFFF; overflow: hidden; padding: 26px 0">
   <div class="track" style="display: flex; align-items: center; width: max-content; gap: 40px; white-space: nowrap; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: clamp(32px, 4vw, 56px); font-weight: 700; letter-spacing: -.03em">
-    <span>Worship</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span style="color: #8DCBF4">Bible study</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span>Prayer</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span style="color: #8DCBF4">Festivals</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span>Home-cooked meals</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span style="color: #8DCBF4">Friendship</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true">Worship</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true" style="color: #8DCBF4">Bible study</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true">Prayer</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true" style="color: #8DCBF4">Festivals</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true">Home-cooked meals</span><span aria-hidden="true" style="color: #E0481A">✦</span>
-    <span aria-hidden="true" style="color: #8DCBF4">Friendship</span><span aria-hidden="true" style="color: #E0481A">✦</span>
+    <span>Worship</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span style="color: #8DCBF4">Bible study</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span>Prayer</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span style="color: #8DCBF4">Festivals</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span>Home-cooked meals</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span style="color: #8DCBF4">Friendship</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true">Worship</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true" style="color: #8DCBF4">Bible study</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true">Prayer</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true" style="color: #8DCBF4">Festivals</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true">Home-cooked meals</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
+    <span aria-hidden="true" style="color: #8DCBF4">Friendship</span><span aria-hidden="true" style="color: #DFFF4F">✦</span>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about" style="max-width: 1280px; margin: 0 auto; padding: 120px 24px 100px; display: flex; flex-direction: column; gap: 64px">
   <div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start">
-    <p style="margin: 0; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: #A9CBF2">(01) — Who we are</p>
+    <p style="margin: 0; flex: 0 0 auto; font-size: 14px; font-weight: 600; color: #DFFF4F">(01) — Who we are</p>
     <h2 style="margin: 0; flex: 1 1 640px; max-width: 920px; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 56px); line-height: 1.08; letter-spacing: -.035em">Indian students at SLU who follow Jesus together. Grew up in church or just curious — <span style="color: #8DCBF4">there's a seat for you at our table.</span></h2>
   </div>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0; border-top: 1px solid rgba(255,255,255,.22)">
@@ -230,7 +231,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <section id="gatherings" style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 110px; display: flex; flex-direction: column; gap: 40px">
   <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
     <div style="display: flex; flex-direction: column; gap: 14px">
-      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #A9CBF2">(03) — Weekly rhythm</p>
+      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #DFFF4F">(03) — Weekly rhythm</p>
       <h2 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -.045em">Gather with us</h2>
     </div>
     <p style="margin: 0; max-width: 380px; line-height: 1.6; color: #D6E2F5">Bring a friend, bring your questions, bring your appetite.</p>
@@ -265,7 +266,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
   <div style="max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-direction: column; gap: 44px">
     <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
       <div style="display: flex; flex-direction: column; gap: 14px">
-        <p style="margin: 0; font-size: 14px; font-weight: 600; color: #A9CBF2">(04) — Moments</p>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; color: #DFFF4F">(04) — Moments</p>
         <h2 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -.045em">Life together</h2>
       </div>
       <a class="btn" href="#join" style="background: #FFFFFF; color: #0A2540; border: 1.5px solid rgba(255,255,255,.22)">Follow on Instagram</a>
@@ -313,7 +314,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <!-- NEW STUDENTS -->
 <section id="new" style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; gap: 56px">
   <div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 18px">
-    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #A9CBF2">(05) — Just landed?</p>
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #DFFF4F">(05) — Just landed?</p>
     <h2 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 68px); line-height: 1; letter-spacing: -.045em">New to St. Louis? <span style="color: #FF9466">We've been there.</span></h2>
     <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #D6E2F5; max-width: 440px">Starting life in a new country is a lot. Let us walk with you through the first weeks.</p>
     <a class="btn" href="#join" style="align-self: flex-start; background: #0A2540; color: #FFFFFF; margin-top: 8px">Message us before you fly</a>
@@ -342,7 +343,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <section id="events" style="background: #00348E">
   <div style="max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-direction: column; gap: 40px">
     <div style="display: flex; flex-direction: column; gap: 14px">
-      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #A9CBF2">(06) — Coming up</p>
+      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #DFFF4F">(06) — Coming up</p>
       <h2 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -.045em">Upcoming events</h2>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
@@ -378,7 +379,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <section id="join" style="max-width: 1280px; margin: 0 auto; padding: 110px 24px">
   <div style="background: #0A2540; color: #FFFFFF; border-radius: 36px; padding: clamp(32px, 5vw, 72px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
     <div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 22px">
-      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #8DCBF4">(07) — Join the family</p>
+      <p style="margin: 0; font-size: 14px; font-weight: 600; color: #DFFF4F">(07) — Join the family</p>
       <h2 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 72px); line-height: .98; letter-spacing: -.045em">There's a place<br>for you <span style="color: #8DCBF4">here.</span></h2>
       <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9DDEC; max-width: 440px">Leave your details and someone from our team will reach out — or find us here:</p>
       <div style="display: flex; flex-wrap: wrap; gap: 10px">
@@ -411,7 +412,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 
 <!-- FOOTER -->
 <footer style="max-width: 1280px; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-direction: column; gap: 28px">
-  <p aria-hidden="true" style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 800; font-size: clamp(64px, 14vw, 210px); line-height: .85; letter-spacing: -.06em; color: #FFFFFF">ICF<span style="color: #8DCBF4">·</span>SLU<span style="color: #FF9466">.</span></p>
+  <p aria-hidden="true" style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 800; font-size: clamp(64px, 14vw, 210px); line-height: .85; letter-spacing: -.06em; color: #FFFFFF">ICF<span style="color: #8DCBF4">·</span>SLU<span style="color: #DFFF4F">.</span></p>
   <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.22); font-size: 14px; color: #D6E2F5">
     <p style="margin: 0">© 2026 Indian Christian Fellowship · A student organization at Saint Louis University</p>
     <p style="margin: 0">“Love one another.” — John 13:34</p>
