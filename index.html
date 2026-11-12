@@ -97,13 +97,13 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); grid-auto-rows: 220px; gap: 16px">
     <figure class="tile p1" style="margin: 0; position: relative; overflow: hidden; border-radius: 28px; background: #2E9BE0; grid-column: span 2; grid-row: span 2">
       <div class="kb" aria-hidden="true" style="position: absolute; inset: 0; background-color: #2E9BE0; background-image: radial-gradient(rgba(255,255,255,.22) 1.5px, transparent 1.5px); background-size: 22px 22px"></div>
+      <video id="worshipVideo" src="images/worship.mp4" poster="images/worship-poster.jpg" autoplay muted loop playsinline aria-label="Worship team leading songs at a fellowship gathering" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,30,60,.8) 0%, rgba(8,30,60,0) 45%)"></div>
       <div style="position: absolute; inset: 0; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; color: #FFFFFF">
-        <span style="align-self: flex-start; background: rgba(10,37,64,.35); padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600">[YOUR FELLOWSHIP VIDEO]</span>
+        <span style="align-self: flex-start; background: rgba(10,37,64,.35); padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600">Worship reel</span>
         <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap">
           <p style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: clamp(28px, 3vw, 40px); font-weight: 700; line-height: 1; letter-spacing: -.03em; color: #FFFFFF; text-shadow: 0 1px 2px rgba(10,37,64,.35)">Worship night</p>
-          <button type="button" aria-label="Play video" style="width: 72px; height: 72px; border-radius: 50%; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
-            <svg aria-hidden="true" viewBox="0 0 24 24" style="width: 26px; height: 26px; margin-left: 3px" fill="#0A2540"><path d="M7 4.5v15l12-7.5z"></path></svg>
-          </button>
+          <button type="button" id="soundBtn" aria-label="Turn sound on" style="width: 64px; height: 64px; border-radius: 50%; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" viewBox="0 0 24 24" style="width: 24px; height: 24px" fill="none" stroke="#0A2540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"></path><path id="soundWaves" d="M16 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11" style="display: none"></path><path id="soundX" d="M17 9l5 6M22 9l-5 6"></path></svg></button>
         </div>
       </div>
     </figure>
@@ -424,6 +424,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #8DCBF4;outline-offset
 <script>
 document.getElementById('sendBtn').addEventListener('click',function(){document.getElementById('formView').hidden=true;document.getElementById('thanksView').hidden=false;});
 document.getElementById('resetBtn').addEventListener('click',function(){document.getElementById('thanksView').hidden=true;document.getElementById('formView').hidden=false;});
+document.getElementById('soundBtn').addEventListener('click',function(){var v=document.getElementById('worshipVideo');v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play();}this.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');document.getElementById('soundWaves').style.display=v.muted?'none':'';document.getElementById('soundX').style.display=v.muted?'':'none';});
 </script>
 </body>
 </html>
